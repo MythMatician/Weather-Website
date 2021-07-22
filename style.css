@@ -24,7 +24,7 @@ section.header {
     align-items: center;
     height: 80vh;
     width: 100vw;
-    background-image: url('/img/wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg');
+    background-image: url('hero2.jpg');
     background-position: center;
     background-size: cover;
 }
