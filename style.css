@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans SC', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #25a244;
+}
+
+a:hover {
+    color: inherit;
+}
+
+section.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+    background-image: url('/img/wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 80%;
+    z-index: 1;
+}
+
+#main::after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#main > * {
+    position: relative;
+    z-index: 10;
+}
+
+.header-container {
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+}
+
+div.overlay {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 1px solid #25a244;
+}
+
+div.overlay h1, p {
+    width: 70%;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+div.overlay p {
+    margin: 10px 0;
+}
+
+div.overlay button {
+    width: 15vw;
+    padding: 5px;
+    font-size: 1.3rem;
+    color: #25a244;
+    border: 2px solid #25a244;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+div.overlay button:hover {
+    color: #fff;
+    background-color: #25a244;
+}
+
+div.form {
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.form h2 {
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+div.form form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+form input {
+    border: 1px solid #25a244;
+    border-radius: 5px;
+    width: 50%;
+    padding-left: 5px;
+    height: 30px;
+    margin: 15px 0;
+    outline-color: darkgrey;
+}
+
+form input[type=submit] {
+    background-color: #25a244;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+form input[type=submit]:hover {
+    background-color: #fff;
+    color: #25a244;
+}
+
+.content-container {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: opacity 1s ease-in;
+    height: 50vh;
+    width: 75%;
+    margin: 5% auto;
+}
+
+.content-container h2 {
+    width: 50%;
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 10px;
+}
+
+.content-container h3 {
+    margin: 10px 0;
+}
+
+.content-container p {
+    font-size: 1rem;
+}
+
+.transition {
+    opacity: 1;
+}
+
+.table-container {
+    margin: 40px 0;
+    max-width: 75%
+}
+
+table {
+    width: 75%;
+}
+
+tr {
+    height: 8vh;
+}
+
+th {
+    border: 1px solid #25a244;
+    width: 25%;
+    padding: 10px 0;
+}
+
+td {
+    border: 1px solid darkgrey;
+    width: auto;
+}
+
+.learnMore {
+    height: 100%;
+    width: 75%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.learnMore h2 {
+    width: 50%;
+    border-bottom: 1px solid darkgrey;
+    padding-bottom: 10px;
+}
+
+.learnMore h3 {
+    margin: 20px 0;
+}
+
+.learnMore p {
+    font-size: 1rem;
+    margin: 40px 0;
+}
+
+.weatherTypes {
+    display: grid;
+    grid-auto-flow: row;
+
+}
+
+.weather {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #25a244;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.weather:nth-of-type(even) {
+    background-color: #fff;
+    border:1px solid darkgrey;
+    color: #000;
+}
+
+footer {
+    height: 6vh;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1rem;
+    width: 75%;
+    text-align: center;
+}
+
+@media (max-width: 720px) {
+    section.header {
+        height: 60vh;
+    } 
+    div.overlay {
+        border: none;
+        width: 100%;
+        text-align: center;
+    }
+    div.overlay button {
+        width: 50%;
+    }
+    .form {
+        display: none !important;
+    }
+    .content-container, .learnMore {
+        width: 90%;
+    }
+    .content-container h2 {
+        width: 100%;
+    }
+    .content-container > * {
+        width: 100%;
+        text-align: center;
+    }
+    .learnMore h2 {
+        width: 100%;
+    }
+    .learnMore p {
+        width: 100%;
+    }
+    .learnMore > * {
+        width: 100%;
+        text-align: center;
+    }
+}

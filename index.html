@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="header">
+        <div id="main" class="header-container" data-aos="zoom-out-up" data-aos-duration="1000">
+            <div class="overlay">
+                <h1>Welcome to the Weather App!</h1>
+                <p>From here you can search just about anything on specific countries.</p>
+                <button><a href="#learnMore">Learn more</a></button>
+            </div>
+            <div class="form">
+                <h2>Subscribe to our newsletter</h2>
+                <form action="">
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="email" placeholder="Confirm your email" required>
+                    <input type="password" placeholder="Enter your password" required>
+                    <input type="password" placeholder="Confirm your password" required>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-container">
+        <h2>Current weather statistics for Pretoria, Gauteng</h2>
+        <div class="table-container">
+            <table>
+                <tr id="astro">
+                    <th>Astrology</th>
+                </tr>
+                <tr id="day">
+                    <th>Day</th>
+                </tr>
+            </table>
+        </div>
+        <h3>What exactly is Astrology?</h3>
+        <p>Astrology is a method of predicting mundane events based upon the assumption that the celestial bodies—particularly the planets and the stars considered in their arbitrary combinations or configurations (called constellations)—in some way either determine or indicate changes in the sublunar world.</p>
+    </section>
+
+    <section class=learnMore id='learnMore'>
+        <h2>What you need to know about weather</h2>
+        <p>The state of the atmosphere at a particular time and place. Weather is described in terms of variable conditions such as temperature, humidity, wind velocity, precipitation, and barometric pressure. Weather on Earth occurs primarily in the troposphere, or lower atmosphere, and is driven by energy from the Sun and the rotation of the Earth. The average weather conditions of a region over time are used to define a region's climate.</p>
+        <h3>Weather types</h3>
+        <div class="weatherTypes">
+            <div class="weather" data-aos="fade-up" data-aos-duration="1000">
+                <h4>Sunny</h4>
+                <p>A sunny day, or clear sky during nighttime, is when there are clouds above the horizon. If one is at the top of a mountain or travel in a plane, possible clouds and fogs don't count as long as they remain below the horizon level. This also means that the sky is always sunny/clear above the highest altitude at which clouds can generate, which is about 85,340 meters (53 miles). Sunny days are bought by anticyclones.</p>
+            </div>
+            <div class="weather" data-aos="fade-up" data-aos-duration="1000">
+                <h4>Cloudy</h4>
+                <p>Cloudy weather is when a significant amount of clouds is covering the sky (at least half the sky). A cloudy day may result in some weak showers, snowfalls, or even thunderstorms, although a thunderstorm temporarily overcasts the sky as it happens.</p>
+            </div>
+            <div class="weather" data-aos="fade-up" data-aos-duration="1000">
+                <h4>Rain</h4>
+                <p>Rain is the condensed moisture of the atmosphere above falling under the form of liquid droplets. It is an extremely important phenomenon that allows life to flourish on continents; without regular rains, the land turns into a hot desert. However, strong rains can also cause catastrophic floods, capable of destroying areas as large as an entire metropolis. In addition, rain causes other side effects such as slippery roads, longer braking distances, decreased visibility (pseudo-fog)... Episodic rains that last only a few minutes are called showers.</p>
+            </div>
+            <div class="weather" data-aos="fade-up" data-aos-duration="1000">
+                <h4>Snow</h4>
+                <p>Snow is atmospheric water that froze and fell to the ground, covering it. It happens when the temperature of the air falls at 0 °C (32 °F). Snow remains as long as the temperature of the ground doesn't go beyond 0 °C (32 °F).The height of the snow blanket is often measured in centimeters (or inches). Snow can already cause accidents at 1 cm (0.4 in), and driving may become impossible at 10 cm (4 in); walking becomes particularly difficult beyond 15 cm (6 in). However, some snowfalls can bring up to a meter (3 foot) of snow, especially in mountains.</p>
+            </div>
+            <div class="weather" data-aos="fade-up" data-aos-duration="1000">
+                <h4>Stormy</h4>
+                <p>A thunderstorm is a type of weather characterized by lightning. There are produced by the largest and tallest clouds that can spawn, the cumulonimbus. Thunderstorms are also accompanied by strong gusts of wind, heavy rainfalls, and sometimes hail and tornadoes, which are the most destructive meteorological event. A thunderstorm, regardless of its intensity, is always a dangerous phenomenon that should be taken seriously as lightning can cause great bodily harm, and sometimes even kill, anyone unfortunate enough to be hit with.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by <strong>Kevin van Niekerk</strong> using <em>WeatherAPI from Team RapidAPI</em></p>
+    </footer>
+</body>
+</html>
